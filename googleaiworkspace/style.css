@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.file-icons {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center items horizontally */
+}
+
+.file-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px; /* Fixed width for each item */
+  text-align: center;
+}
+
+.icon-placeholder {
+  width: 100px; /* Width of the icon */
+  height: 100px; /* Height of the icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem; /* Size of the icon */
+  background: #ddd; /* Background color for the icon */
+  border-radius: 50%; /* Circular icon */
+  margin-bottom: 10px;
+}
+
+.file-name {
+  font-size: 0.9rem;
+  max-width: 100px; /* Adjust width as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
